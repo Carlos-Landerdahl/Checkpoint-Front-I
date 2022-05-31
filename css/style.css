@@ -73,7 +73,8 @@ main > p {
 /** --------------------------MAIN-------------------------- **/
 
 nav {
-    margin: 60px 0px;
+    background-color: rgb(233, 233, 233);
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +88,7 @@ nav {
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     margin-bottom: 40px;
     width: 400px;
-    height: 430.5px;
+    height: 460.5px;
     transition: all 0.3s ease-out;
 }
 
@@ -96,6 +97,10 @@ nav {
     cursor: pointer;
 }
  
+.card__city h2 {
+    padding-top:30px;
+}
+
 .card__city p {
     color: #a3a5ae;
     font-size: 16px;
@@ -120,4 +125,128 @@ nav {
 .card__purple {
     border-left: 3px solid #8e3bb5;
 }
- 
+
+/** --------------------------CAROUSEL-------------------------- **/
+
+.container__slide {
+    margin: 0;
+    padding: 0;
+    height: 620px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.content > h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+    color: rgb(63, 63, 63);
+    text-align: center;
+
+}
+
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 25px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+/** --------------------------VIDEO-------------------------- **/
+
+.container__video {
+    background-color:rgb(233, 233, 233) ;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** --------------------------FOOTER-------------------------- **/
+
+footer {
+    background-color:rgb(156, 156, 156);
+}
+
+.container__footer {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer > p {
+    padding-bottom: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
