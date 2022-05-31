@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/** --------------------------HEADER-------------------------- **/
+
+.container__header {
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding:1px 100px;
+}
+
+.menu__header > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.menu__header > ul > li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(112, 112, 112);
+    border: 2px solid rgb(99, 99, 99);
+    border-radius: 30px;
+    padding: 10px;
+}
+.menu__header > ul > li:hover {
+    border-color: rgb(34, 34, 34);
+}
+
+.menu__header > ul > li > a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+
+.menu__header > ul > li > a:hover {
+    color: rgb(34, 34, 34);
+}
+
+/** --------------------------MAIN-------------------------- **/
+
+main {
+    background-color: black;
+    width:100%;
+    height:600px;
+    background-image: url('/img/banner-main.jpg');
+    background-repeat: no-repeat;
+    background-position:0% 90%;
+    background-size: cover;
+}
+
+main > p {
+    position: relative;
+    font-weight: 300;
+    top: 89.5%;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    text-align: center;
+    font-size: 29px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.363)
+}
+
+/** --------------------------MAIN-------------------------- **/
+
+nav {
+    margin: 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.card__city {  
+    background-color: rgba(255, 255, 255, 0.582);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    margin-bottom: 40px;
+    width: 400px;
+    height: 430.5px;
+    transition: all 0.3s ease-out;
+}
+
+.card__city:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+ 
+.card__city p {
+    color: #a3a5ae;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+ 
+.card__city--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;   
+}
+
+.card__green {
+    border-left: 3px solid #3bb54a;
+}
+.card__red {
+    border-left: 3px solid #9b2d2d;
+}
+.card__purple {
+    border-left: 3px solid #8e3bb5;
+}
+ 
