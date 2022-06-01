@@ -133,8 +133,8 @@ body {
 }
 
 .content {
-    height: 600px;
-    width: 935px;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -244,7 +244,7 @@ footer > p {
     width: 80px;
     text-decoration: none;
     color: white;
-    background-color:rgb(182, 3, 107);
+    background-color:rgb(212, 103, 109);
     padding: 10px;
     border-radius: 50%;
     position: fixed;
@@ -255,6 +255,17 @@ footer > p {
 
 
 /** --------------------------RESPONSIVE-------------------------- **/
+
+@media screen and (min-width: 1200px){
+    .content {
+    height: 700px;
+    width: 935px;
+    }
+
+    .container__slide {
+        height: 775px;
+    }
+}
 
 @media screen and (max-width: 425px){
 
@@ -312,5 +323,47 @@ footer > p {
 
 }
 
+@media screen and (max-width: 375px){
+    .content {
+        width: 100%;
+    }
+
+    div.content > h1 {
+        font-size: 25px;
+    }
+
+    .menu__header > ul {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 393px){
+    .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .content {
+        width: 100%;
+    }
+
+    .content > img {
+        width: 100%;
+    }
+
+    .content > h1 {
+        padding-top:10px;
+        font-size: 30px;
+    }
+
+    .container__header {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 20px;
+    }
+
+
+}
 
 
