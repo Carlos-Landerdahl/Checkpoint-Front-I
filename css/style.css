@@ -236,6 +236,23 @@ footer > p {
     text-align: center;
 }
 
+/** --------------------------BUTTONBACK-------------------------- **/
+
+#back__button {
+    text-align: center;
+    font-size:40px;
+    width: 80px;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(182, 3, 107);
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+}
+
 
 /** --------------------------RESPONSIVE-------------------------- **/
 
@@ -285,6 +302,11 @@ footer > p {
     }
 
     .bar {
+        width: 50px;
+    }
+
+    #back__button {
+        font-size:20px;
         width: 50px;
     }
 

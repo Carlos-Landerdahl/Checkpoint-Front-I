@@ -12,22 +12,25 @@
 
 </head>
 <body>
-    <header>
+    <!-- Cabeçalho -->
+    <header id="header">
         <div class="container__header">
             <div class="logo__header">
                 <img width="200" src="img/minas-logo.png" alt="Logo de Minas Gerais">
             </div>
             <div class="menu__header">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Curiosidades</a></li>
-                    <li><a href="#">Vídeo</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                    <li><a href="#video">Vídeo</a></li>
                 </ul>
             </div>
         </div>
     </header>
+    <!-- Conteúdo Principal -->
     <main class="container__main"></main>
-    <nav class="container__card">
+    <!-- Conteúdo Cards -->
+    <nav class="container__card" id="home">
         <div class="card">
             <div class="card__city card__purple">
                 <h2>Uberlândia</h2>
@@ -50,7 +53,8 @@
             </div>
         </div>
     </nav>
-    <section class="container__slide">
+    <!-- Conteúdo Curiosidades -->
+    <section class="container__slide" id="curiosidades">
         <div class="content">
             <h1>Turismo em Minas Gerais</h1>
             <div class="slides">
@@ -75,11 +79,13 @@
             </div>
         </div>
     </section>
+    <!-- Conteúdo Vídeo -->
     <section>
-        <div class="container__video">
+        <div class="container__video" id="video">
             <iframe width="1220" height="630" src="https://www.youtube.com/embed/Ig_PiP8B1mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
+    <!-- Rodapé -->
     <footer>
         <div class="container__footer">
             <div class="git">
@@ -91,5 +97,8 @@
         </div>
         <p>Projeto feito por: Carlos Roberto Landerdahl Neto</p>
     </footer>
+    <div">
+        <a href="#header" id="back__button">&#9650</a>
+    </div>
 </body>
 </html>
